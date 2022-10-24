@@ -3,12 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: sans-serif;
 }
+
 svg {
   pointer-events: none;
 }
+
 .kick-pad,
 .snare-pad,
 .hihat-pad {
@@ -17,24 +20,31 @@ svg {
   margin: 1rem 0.5rem;
   cursor: pointer;
 }
+
 .kick-pad {
-  background: rgba(0, 0, 255, 0.514);
+  background: rgba(46, 46, 211, 0.514);
 }
+
 .snare-pad {
-  background: rgba(255, 0, 85, 0.432);
+  background: rgba(135, 17, 56, 0.432);
 }
+
 .hihat-pad {
-  background: rgba(251, 255, 0, 0.315);
+  background: rgba(90, 91, 15, 0.315);
 }
-.kick-pad.active{
+
+.kick-pad.active {
   background: rgba(25, 32, 51, 0.432);
 }
-.snare-pad.active{
+
+.snare-pad.active {
   background: rgba(218, 95, 136, 0.432);
 }
-.hihat-pad.active{
+
+.hihat-pad.active {
   background: rgba(103, 104, 28, 0.315);
 }
+
 .sequencer {
   display: flex;
   min-height: 100vh;
@@ -42,6 +52,7 @@ svg {
   align-items: center;
   justify-content: center;
 }
+
 .hihat-track,
 .snare-track,
 .kick-track {
@@ -51,11 +62,13 @@ svg {
   justify-content: space-between;
   margin-top: 5rem;
 }
+
 .hihat,
 .snare,
 .kick {
   display: flex;
 }
+
 .controls {
   display: flex;
   justify-content: space-between;
@@ -63,81 +76,76 @@ svg {
   flex: 1;
   margin: 0rem 2rem;
 }
-.controls button{
-  padding: 1rem;
-border: none;
-background: rgba(0, 0, 0, 0.267);
-color: white;
-font-size: 1rem;
-cursor: pointer;
-transition: all 0.5s ease;
-}
 
-.pad{
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: rgba(0, 0, 0, 0.267);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
   transition: all 0.5s ease;
 }
-.play{
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.play {
   padding: 1rem 2rem;
   font-size: 1rem;
   background: rgba(14, 26, 23, 0.815);
   color: white;
   border: none;
   cursor: pointer;
-  margin-top:3rem;
-  
+  margin-top: 3rem;
+
 
 }
 
-select{
+select {
   padding: 1rem;
   font-size: 1rem;
 
 
 }
 
-@keyframes playTrack{
-  from{
+@keyframes playTrack {
+  from {
     transform: scale(1);
 
-  }to{
+  }
+
+  to {
     transform: scale(1.2);
 
   }
 }
 
 
-.mute.active{
+.mute.active {
   background: rgb(129, 28, 28);
 }
 
 
-.tempo{
+.tempo {
   margin: 3rem;
   width: 30%;
 }
-.tempo-slider{
+
+.tempo-slider {
   -webkit-appearance: none;
   padding: 0.1rem;
   margin: 1rem 0rem;
-  width: 100%
-  ;
+  width: 100%;
   position: relative;
   background: rgb(88, 88, 88);
   cursor: pointer;
   border-radius: 1rem;
 }
-.tempo p{
+
+.tempo p {
   font-size: 1.5rem;
   margin: 2rem;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
